@@ -308,7 +308,7 @@ class UserRegistrationFragment : BaseFragment() {
                         strActivityCode + "09"
                     )
                 else {
-                    if(strMobileNo.equals("1111111111")) {
+                    if(strMobileNo.equals("8888888888")) {
                         MySharedPref.setLoginPin(context, strLoginPin)
                         MySharedPref.setMobileNumber(context, strMobileNo)
 
