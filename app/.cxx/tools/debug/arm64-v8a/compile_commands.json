@@ -1,7 +1,7 @@
 [
 {
-  "directory": "D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/GITHUB_SECTION/Janmanrega/app/.cxx/Debug/5t5f3453/arm64-v8a",
-  "command": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\27.0.12077973\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android23 --sysroot=C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dccmgnrega_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\ccmgnrega.dir\\ccmgnrega.cpp.o -c D:\\NIC_PROJECTS\\ANUSUYA_PROJECTS\\MNREGA_PROJECTS\\GITHUB_SECTION\\Janmanrega\\app\\src\\main\\cpp\\ccmgnrega.cpp",
-  "file": "D:\\NIC_PROJECTS\\ANUSUYA_PROJECTS\\MNREGA_PROJECTS\\GITHUB_SECTION\\Janmanrega\\app\\src\\main\\cpp\\ccmgnrega.cpp"
+  "directory": "D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/GITHUB_SECTION/Janmanrega2.0/Janmanrega2.0/app/.cxx/Debug/5t5f3453/arm64-v8a",
+  "command": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk\\27.0.12077973\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android23 --sysroot=C:/Users/Administrator/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dccmgnrega_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\ccmgnrega.dir\\ccmgnrega.cpp.o -c D:\\NIC_PROJECTS\\ANUSUYA_PROJECTS\\MNREGA_PROJECTS\\GITHUB_SECTION\\Janmanrega2.0\\Janmanrega2.0\\app\\src\\main\\cpp\\ccmgnrega.cpp",
+  "file": "D:\\NIC_PROJECTS\\ANUSUYA_PROJECTS\\MNREGA_PROJECTS\\GITHUB_SECTION\\Janmanrega2.0\\Janmanrega2.0\\app\\src\\main\\cpp\\ccmgnrega.cpp"
 }
 ]

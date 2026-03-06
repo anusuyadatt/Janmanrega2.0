@@ -1,3 +1,3 @@
-D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/GITHUB_SECTION/Janmanrega/app/.cxx/Debug/5t5f3453/arm64-v8a/CMakeFiles/ccmgnrega.dir
-D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/GITHUB_SECTION/Janmanrega/app/.cxx/Debug/5t5f3453/arm64-v8a/CMakeFiles/edit_cache.dir
-D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/GITHUB_SECTION/Janmanrega/app/.cxx/Debug/5t5f3453/arm64-v8a/CMakeFiles/rebuild_cache.dir
+D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/GITHUB_SECTION/Janmanrega2.0/Janmanrega2.0/app/.cxx/Debug/5t5f3453/arm64-v8a/CMakeFiles/ccmgnrega.dir
+D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/GITHUB_SECTION/Janmanrega2.0/Janmanrega2.0/app/.cxx/Debug/5t5f3453/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/GITHUB_SECTION/Janmanrega2.0/Janmanrega2.0/app/.cxx/Debug/5t5f3453/arm64-v8a/CMakeFiles/rebuild_cache.dir

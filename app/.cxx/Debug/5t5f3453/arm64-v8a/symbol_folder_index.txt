@@ -1,1 +1,1 @@
-D:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\GITHUB_SECTION\Janmanrega\app\build\intermediates\cxx\Debug\5t5f3453\obj\arm64-v8a
+D:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\GITHUB_SECTION\Janmanrega2.0\Janmanrega2.0\app\build\intermediates\cxx\Debug\5t5f3453\obj\arm64-v8a

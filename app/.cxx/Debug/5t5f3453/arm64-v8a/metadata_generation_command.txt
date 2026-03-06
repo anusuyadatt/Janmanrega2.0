@@ -1,4 +1,4 @@
-                        -HD:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\GITHUB_SECTION\Janmanrega\app\src\main\cpp
+                        -HD:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\GITHUB_SECTION\Janmanrega2.0\Janmanrega2.0\app\src\main\cpp
 -DCMAKE_SYSTEM_NAME=Android
 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 -DCMAKE_SYSTEM_VERSION=23
@@ -9,10 +9,10 @@
 -DCMAKE_ANDROID_NDK=C:\Users\Administrator\AppData\Local\Android\Sdk\ndk\27.0.12077973
 -DCMAKE_TOOLCHAIN_FILE=C:\Users\Administrator\AppData\Local\Android\Sdk\ndk\27.0.12077973\build\cmake\android.toolchain.cmake
 -DCMAKE_MAKE_PROGRAM=C:\Users\Administrator\AppData\Local\Android\Sdk\cmake\3.22.1\bin\ninja.exe
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\GITHUB_SECTION\Janmanrega\app\build\intermediates\cxx\Debug\5t5f3453\obj\arm64-v8a
--DCMAKE_RUNTIME_OUTPUT_DIRECTORY=D:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\GITHUB_SECTION\Janmanrega\app\build\intermediates\cxx\Debug\5t5f3453\obj\arm64-v8a
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\GITHUB_SECTION\Janmanrega2.0\Janmanrega2.0\app\build\intermediates\cxx\Debug\5t5f3453\obj\arm64-v8a
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=D:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\GITHUB_SECTION\Janmanrega2.0\Janmanrega2.0\app\build\intermediates\cxx\Debug\5t5f3453\obj\arm64-v8a
 -DCMAKE_BUILD_TYPE=Debug
--BD:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\GITHUB_SECTION\Janmanrega\app\.cxx\Debug\5t5f3453\arm64-v8a
+-BD:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\GITHUB_SECTION\Janmanrega2.0\Janmanrega2.0\app\.cxx\Debug\5t5f3453\arm64-v8a
 -GNinja
 -DCMAKE_ANDROID_ARM64_PAGE_SIZE=16384
                         Build command args: []
