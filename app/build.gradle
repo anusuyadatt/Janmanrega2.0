@@ -1,0 +1,152 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    compileSdkVersion 35
+    buildToolsVersion '31.0.0'
+    lintOptions {
+        disable "ResourceType"
+    }
+    signingConfigs {
+        ccmgnerga {
+            storeFile file('D:/anusuya/Android/Signed_apk/ccmgneraga.jks')
+            storePassword 'Amit@123'
+            keyAlias = 'ccmgnerga'
+            keyPassword 'Amit@123'
+        }
+    }
+    defaultConfig {
+        applicationId "nic.hp.ccmgnrega"
+        minSdkVersion 23
+        targetSdkVersion 35
+        versionCode=35
+        versionName="35.0"
+        multiDexEnabled true
+        externalNativeBuild {
+            cmake {
+                cppFlags ''
+                arguments "-DCMAKE_ANDROID_ARM64_PAGE_SIZE=16384"
+            }
+        }
+        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86_64'
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_17
+            targetCompatibility JavaVersion.VERSION_17
+        }
+        kotlinOptions {
+            jvmTarget = "17"
+        }
+    }
+    bundle {
+        density {
+            // Different APKs are generated for devices with different screen densities; true by default.
+            enableSplit true
+        }
+        abi {
+            // Different APKs are generated for devices with different CPU architectures; true by default.
+            enableSplit true
+        }
+        language {
+            // This is disabled so that the App Bundle does NOT split the APK for each language.
+            // We're gonna use the same APK for all languages.
+            enableSplit false
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.ccmgnerga
+
+        }
+        debug {
+            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    // apply plugin: 'com.google.gms.google-services'
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+    /*compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }*/
+
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path file('src/main/cpp/CMakeLists.txt')
+          //  version '3.22.1'
+        }
+    }
+  //  ndkVersion '29.0.14206865'
+   // ndkVersion '25.2.9519653'
+    namespace 'nic.hp.ccmgnrega'
+}
+
+dependencies {
+
+    // Core UI libraries
+ // implementation 'androidx.appcompat:appcompat:1.7.0'
+  implementation 'com.google.android.material:material:1.12.0'
+   implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+
+
+   implementation 'androidx.appcompat:appcompat:1.0.0'
+   //implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+ // implementation 'com.google.android.material:material:1.9.0'
+
+
+    implementation 'androidx.activity:activity:1.9.0'
+
+    // Navigation (updated)
+   // implementation 'androidx.navigation:navigation-fragment:2.8.3'
+   // implementation 'androidx.navigation:navigation-ui:2.8.3'
+
+    implementation 'androidx.navigation:navigation-fragment:2.7.7'
+    implementation 'androidx.navigation:navigation-ui:2.7.7'
+
+    // Legacy support (keep ONLY if needed)
+    // If you are using old APIs like LocalBroadcastManager then keep this.
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // Google Play services
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+    implementation 'com.google.android.play:app-update:2.1.0'
+
+    // Networking
+    implementation 'com.squareup.retrofit2:converter-gson:2.10.0'  // updated safe version
+
+    // Lottie animations
+    implementation 'com.airbnb.android:lottie:6.3.0'
+
+    // SQLite helper (fixed version)
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
+
+    // Pinview (old but harmless)
+    implementation 'com.github.GoodieBag:Pinview:v1.4'
+
+    // Root detection
+    //implementation 'com.scottyab:rootbeer-lib:0.1.0'
+
+    // Tests
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+}

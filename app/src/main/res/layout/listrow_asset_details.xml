@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding_10">
+
+    <TextView
+        android:id="@+id/assetNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#000"
+        android:textSize="@dimen/text_font_size_16"></TextView>
+
+    <TextView
+        android:id="@+id/assetIDTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#000"
+        android:textSize="@dimen/text_font_size_16"></TextView>
+
+    <TextView
+        android:id="@+id/workNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#000"
+        android:textSize="@dimen/text_font_size_16"></TextView>
+
+    <TextView
+        android:id="@+id/workIDTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#000"
+        android:textSize="@dimen/text_font_size_16"></TextView>
+</LinearLayout>

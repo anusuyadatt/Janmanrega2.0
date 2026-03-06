@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/llCard"
+    android:orientation="vertical"
+  >
+<!--
+    android:background="@drawable/card_main_130"
+-->
+
+    <ImageView
+        android:id="@+id/ivOptions_pic"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_android" />
+
+    <TextView
+        android:id="@+id/tvOptions_name"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="3"
+        android:maxLines="3"
+        android:text="name"
+        android:textColor="#333333"
+        android:textSize="13sp"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>
+
+
+

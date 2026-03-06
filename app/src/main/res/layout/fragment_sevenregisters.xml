@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:id="@+id/scrollableContents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:orientation="vertical"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/expendableshape"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="@dimen/padding_5"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:background="@drawable/expendableshape"
+                    android:drawableLeft="@mipmap/icon60_registers"
+                    android:gravity="center|left"
+                    android:text="@null"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/sevenRegistersAudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:paddingLeft="55dp"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvSevenregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="left|center"
+                android:text="@string/sevenregister"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+            <!--  Register_1 Section Start-->
+
+            <RelativeLayout
+                android:id="@+id/linearRegister1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgRegister1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvRegister_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/sevenregister_1"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgRegister1"
+                    android:layout_toLeftOf="@id/register1AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/register1AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRegister1_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvRegister_1_Desc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_1_desc_1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_1_Desc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_1_desc_2"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_1_Desc_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_1_desc_3"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_1_Desc_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_1_desc_4"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <!--  Register_1 Section End-->
+
+            <!--  Register_2 Section Start-->
+
+            <RelativeLayout
+                android:id="@+id/linearRegister2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgRegister2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvRegister_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/sevenregister_2"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgRegister2"
+                    android:layout_toLeftOf="@id/register2AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/register2AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRegister2_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvRegister_2_Desc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_2_desc_1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_2_Desc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_2_desc_2"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+            <!--  Register_2 Section End-->
+            <!--  Register_3 Section Start-->
+
+            <RelativeLayout
+                android:id="@+id/linearRegister3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgRegister3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvRegister_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/sevenregister_3"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgRegister3"
+                    android:layout_toLeftOf="@id/register3AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/register3AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRegister3_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvRegister_3_Desc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_3_desc_1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_3_Desc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_3_desc_2"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_3_Desc_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_3_desc_3"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <!--  Register_3 Section End-->
+            <!--  Register_4 Section Start-->
+
+            <RelativeLayout
+                android:id="@+id/linearRegister4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgRegister4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/sevenregister_4"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgRegister4"
+                    android:layout_toLeftOf="@id/register4AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/register4AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRegister4_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_2"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_3"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_4"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_5"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_6"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_7"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_8"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_9"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_10"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_11"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_12"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_13"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_14"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_14a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_14a"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_14b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_14b"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_14c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_14c"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_14d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_14d"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_14e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_14e"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_15"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_15a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_15a"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_15b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_15b"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_15c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_15c"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_15d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_15d"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_16"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_16a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_16a"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_16b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_16b"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_16c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_16c"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_16d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_16d"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_4_Desc_16e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_4_desc_16e"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <!--  Register_4 Section End-->
+
+            <!--  Register_5 Section Start-->
+
+            <RelativeLayout
+                android:id="@+id/linearRegister5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgRegister5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvRegister_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/sevenregister_5"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgRegister5"
+                    android:layout_toLeftOf="@id/register5AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/register5AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRegister5_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvRegister_5_Desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_5_desc"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <!--  Register_5 Section End-->
+            <!--  Register_6 Section Start-->
+
+            <RelativeLayout
+                android:id="@+id/linearRegister6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgRegister6"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvRegister_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/sevenregister_6"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgRegister6"
+                    android:layout_toLeftOf="@id/register6AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/register6AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRegister6_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvRegister_6_Desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_6_desc"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_6_Desc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_6_desc_1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_6_Desc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_6_desc_2"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_6_Desc_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_6_desc_3"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_6_Desc_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_6_desc_4"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_6_Desc_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_6_desc_5"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_6_Desc_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_6_desc_6"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_6_Desc_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_6_desc_7"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_6_Desc_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_6_desc_8"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_6_Desc_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_6_desc_9"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <!--  Register_6 Section End-->
+
+            <!--  Register_7 Section Start-->
+
+            <RelativeLayout
+                android:id="@+id/linearRegister7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgRegister7"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/sevenregister_7"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgRegister7"
+                    android:layout_toLeftOf="@id/register7AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/register7AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRegister7_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_2"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_3"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_4"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_5"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_6"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_7"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_8"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_9"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_10"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_11"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_12"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_13"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_14"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvRegister_7_Desc_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/sevenregister_7_desc_15"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <!--  Register_7 Section End-->
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

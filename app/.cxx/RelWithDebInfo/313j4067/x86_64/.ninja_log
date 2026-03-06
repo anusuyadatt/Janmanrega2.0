@@ -1,0 +1,14 @@
+# ninja log v5
+1	501	7895729403295248	CMakeFiles/ccmgnrega.dir/ccmgnrega.cpp.o	dc77251f963dce03
+503	702	7895729405070220	D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/JANMANREGA_V27.0_19112025/app/build/intermediates/cxx/RelWithDebInfo/313j4067/obj/x86_64/libccmgnrega.so	9af5485a23795430
+0	49	0	clean	1a5333f9ba8b1a6f
+0	19	0	clean	1a5333f9ba8b1a6f
+0	17	0	clean	1a5333f9ba8b1a6f
+2	1246	7896408912550684	CMakeFiles/ccmgnrega.dir/ccmgnrega.cpp.o	dc77251f963dce03
+1247	3811	7896408933060446	D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/JANMANREGA_V27.0_19112025/app/build/intermediates/cxx/RelWithDebInfo/313j4067/obj/x86_64/libccmgnrega.so	9af5485a23795430
+0	20	0	clean	1a5333f9ba8b1a6f
+0	21	0	clean	1a5333f9ba8b1a6f
+0	20	0	clean	1a5333f9ba8b1a6f
+0	17	0	clean	1a5333f9ba8b1a6f
+69	3766	7896426401811087	CMakeFiles/ccmgnrega.dir/ccmgnrega.cpp.o	dc77251f963dce03
+3766	4432	7896426408387491	D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/JANMANREGA_V27.0_19112025/app/build/intermediates/cxx/RelWithDebInfo/313j4067/obj/x86_64/libccmgnrega.so	9af5485a23795430

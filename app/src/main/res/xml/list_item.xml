@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notificationLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/notificationLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:background="#fff"
+        android:drawableLeft="@drawable/ic_download"
+        android:gravity="left|center"
+        android:text="@null"
+        android:textColor="#000"
+        android:textSize="@dimen/text_font_size_16" />
+    <TextView
+        android:id="@+id/notificationTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:background="#fff"
+        android:gravity="left|center"
+        android:text="@null"
+        android:textColor="#000"
+        android:textSize="@dimen/text_font_size_12" />
+    <TextView
+        android:id="@+id/notificationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:background="#fff"
+        android:gravity="left|center"
+        android:text="@null"
+        android:textColor="#000"
+        android:textSize="@dimen/text_font_size_12" />
+    <TextView
+        android:id="@+id/applicationLastDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:background="#fff"
+        android:gravity="left|center"
+        android:text="@null"
+        android:textColor="#000"
+        android:textSize="@dimen/text_font_size_12" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/corigendumTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:layout_marginRight="@dimen/padding_5"
+        android:background="@drawable/expendableshape"
+        android:drawableLeft="@android:drawable/ic_menu_more"
+        android:gravity="left|center"
+        android:text="@null"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_font_size_16" />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ccmgnrega",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ccmgnrega::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ccmgnrega-RelWithDebInfo-0733ff3182f5e901d21d.json",
+					"name" : "ccmgnrega",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/JANMANREGA_V27.0_19112025/app/.cxx/RelWithDebInfo/313j4067/arm64-v8a",
+		"source" : "D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/JANMANREGA_V27.0_19112025/app/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

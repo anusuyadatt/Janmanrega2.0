@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:id="@+id/scrollableContents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/expendableshape"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="@dimen/padding_5"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:drawableLeft="@mipmap/icon60_about_mgnrega"
+                    android:gravity="center|left"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/aboutMgnregaAudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:paddingLeft="55dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/aboutMGNERGA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/padding_5"
+                android:layout_marginRight="@dimen/padding_5"
+                android:gravity="left|center"
+                android:text="@string/about_mgnrega_content_2024"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+            <!--  Objective Section Start-->
+
+            <RelativeLayout
+                android:id="@+id/linearObjective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgObjective"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvObjective"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/imgObjective"
+                    android:gravity="center_vertical"
+                    android:text="@string/objective_of_scheme"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/linearObjectiveDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvContent1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/objective_1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/objective_2"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/objective_3"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/objective_4"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <!--  Objective Section End-->
+
+
+
+            <!--  Key Stakeholders Start-->
+
+            <RelativeLayout
+                android:id="@+id/linearKeyStakeholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgKeyStakeholder"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvKeyStakeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/imgKeyStakeholder"
+                    android:gravity="center_vertical"
+                    android:text="@string/key_stakeholders"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/linearimgKeyStakeholderDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvContent6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:text="@string/key_stakeholder_header"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:text="@string/key_stakeholder_1"
+                    android:textColor="#000"
+
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:text="@string/key_stakeholder_2"
+                    android:textColor="#000"
+
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:text="@string/key_stakeholder_3"
+                    android:textColor="#000"
+
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:text="@string/key_stakeholder_4"
+                    android:textColor="#000"
+
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:text="@string/key_stakeholder_5"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:text="@string/key_stakeholder_6"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:text="@string/key_stakeholder_7"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:text="@string/key_stakeholder_8"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:text="@string/key_stakeholder_9"
+                    android:textColor="#000"
+
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:text="@string/key_stakeholder_10"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvContent17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:text="@string/key_stakeholder_11"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <!--  Key Stakeholders Section End-->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

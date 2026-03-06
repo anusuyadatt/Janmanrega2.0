@@ -1,0 +1,18 @@
+                        -HD:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\JANMANREGA_V27.0_19112025\app\src\main\cpp
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=23
+-DANDROID_PLATFORM=android-23
+-DANDROID_ABI=x86_64
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DANDROID_NDK=C:\Users\Administrator\AppData\Local\Android\Sdk\ndk\25.2.9519653
+-DCMAKE_ANDROID_NDK=C:\Users\Administrator\AppData\Local\Android\Sdk\ndk\25.2.9519653
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\Administrator\AppData\Local\Android\Sdk\ndk\25.2.9519653\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=C:\Users\Administrator\AppData\Local\Android\Sdk\cmake\3.22.1\bin\ninja.exe
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\JANMANREGA_V27.0_19112025\app\build\intermediates\cxx\RelWithDebInfo\313j4067\obj\x86_64
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=D:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\JANMANREGA_V27.0_19112025\app\build\intermediates\cxx\RelWithDebInfo\313j4067\obj\x86_64
+-DCMAKE_BUILD_TYPE=RelWithDebInfo
+-BD:\NIC_PROJECTS\ANUSUYA_PROJECTS\MNREGA_PROJECTS\JANMANREGA_V27.0_19112025\app\.cxx\RelWithDebInfo\313j4067\x86_64
+-GNinja
+                        Build command args: []
+                        Version: 2

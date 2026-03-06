@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:background="@drawable/layout_round_corner">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivMessage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:src="@mipmap/icon_warning" />
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/ivMessage"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:textSize="18sp"
+                    android:text="@string/app_name"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_height="1.5dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/tvMessageType"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:textColor="@color/blue"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:text="ERROR :"/>
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="Please Check your network"
+                android:textColor="@color/blue"/>
+
+
+       <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp">
+
+           <android.widget.Button
+               android:id="@+id/dialogButtonSkip"
+               android:layout_marginLeft="5dp"
+               android:visibility="gone"
+               android:layout_width="100dp"
+               android:layout_gravity="right"
+               style="@style/buttonLightBlue"
+               android:text="@string/skip" />
+
+            <android.widget.Button
+                android:id="@+id/dialogButtonOK"
+                android:padding="5dp"
+                android:layout_width="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+                android:layout_gravity="left"
+                style="@style/buttonBlue"
+                android:text="@string/ok" />
+
+            </LinearLayout>
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1.5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="00:00"/>
+
+        <TextView
+            android:id="@+id/tvAlertId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="@string/app_name"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#ffffff</color>
+    <color name="list_background">#F765A3</color>
+    <!--     <color name="list_background">#cc3366</color>
+     <color name="list_background">#ffa91e</color>-->
+    <color name="list_background_pressed">#0086FF</color>
+<!--
+    <color name="list_background">#0D4C88</color>
+    <color name="list_background_pressed">#4387fd</color>
+-->
+    <color name="list_divider">#ffffff</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="label_color">#ffffff</color>
+    <color name="label_bg_color">#0D4C88</color>
+    <color name="label_color_odd">#000000</color>
+    <color name="label_bg_color_odd">#ffffff</color>
+    <color name="red_color">#DC4E41</color>
+    <color name="green_color">#088A29</color>
+    <color name="error_background">#FF4F5D</color>
+    <color name="blue_color">#0D4C88</color>
+    <color name="blue_text">#3F51B5</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightBlue">#6FBBD3</color>
+    <color name="search_bar_text_color">#CDC8C8</color>
+    <color name="job_card_info">#716C6C</color>
+    <color name="expandable_list_background_group1">#E6E3E3</color>
+    <color name="expandable_list_background_group2">#DAD6D6</color>
+    <color name="expandable_list_background_item">#FFFFFF</color>
+    <color name="expandable_list_text_group1">#3F51B5</color>
+    <color name="expandable_list_text_group1_2">#363535</color>
+    <color name="expandable_list_text_group2">#000000</color>
+    <color name="expandable_list_text_item">#000000</color>
+    <color name="app_background">#FFFFFF</color>
+    <color name="tab_layout_background">#EDE9E9</color>
+    <color name="all_text">#635F5F</color>
+    <color name="orange">#FF5722</color>
+    <color name="accepted">#FF2CC632</color>
+    <color name="red">#FF0000</color>
+    <color name="maroon">#C34949</color>
+    <color name="blue">#434343</color>
+    <color name="colorPrimary">#12a6f0</color>
+    <color name="colorPrimaryDark">#0A87C1</color>
+    <color name="colorAccent">#2bb0f2</color>
+    <color name="lightYellow">#FFD580</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="card_border">#D99D6F</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="grey">#555555</color>
+    <color name="jobcard_green">#4499CC00</color>
+    <color name="darkgreen">#FF669900</color>
+    <color name="radio_selected">#ceedfc</color>
+    <color name="radio_normal">#0086FF</color>
+    <color name="colorTitleBar">#00638B</color>
+
+</resources>

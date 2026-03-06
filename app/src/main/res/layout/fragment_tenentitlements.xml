@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:id="@+id/scrollableContents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/expendableshape"
+                android:drawableLeft="@mipmap/icon60_entitlements"
+                android:gravity="center|left"
+                android:text="@null"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <!--  Entitlement_1 Section Start-->
+
+            <RelativeLayout
+                android:id="@+id/linearEntitlement1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgEntitlement1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/entitlement_1"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgEntitlement1"
+                    android:layout_toLeftOf="@id/entitlement1AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/entitlement1AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearEntitlement1_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvEntitlement_1_Desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_1_desc"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <!--  Entitlement_1  Section End-->
+
+            <!--  Entitlement_2Section Start-->
+
+            <RelativeLayout
+                android:id="@+id/linearEntitlement2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgEntitlement2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/entitlement_2"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgEntitlement2"
+                    android:layout_toLeftOf="@id/entitlement2AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/entitlement2AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearEntitlement2_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvEntitlement_2_Desc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_2_desc_1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_2_Desc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_2_desc_2"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <!--  Entitlement_2  Section End-->
+            <!--  Entitlement_3 Section Start-->
+            <RelativeLayout
+                android:id="@+id/linearEntitlement3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgEntitlement3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/entitlement_3"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgEntitlement3"
+                    android:layout_toLeftOf="@id/entitlement3AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/entitlement3AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearEntitlement3_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvEntitlement_3_Desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_3_desc"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <!--  Entitlement_3 Section End-->
+
+            <!--  Entitlement_4 Section Start-->
+            <RelativeLayout
+                android:id="@+id/linearEntitlement4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgEntitlement4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/entitlement_4"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgEntitlement4"
+                    android:layout_toLeftOf="@id/entitlement4AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/entitlement4AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearEntitlement4_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvEntitlement_4_Desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_4_desc"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <!--  Entitlement_4 Section End-->
+            <!--  Entitlement_5 Section Start-->
+            <RelativeLayout
+                android:id="@+id/linearEntitlement5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgEntitlement5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/entitlement_5"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgEntitlement5"
+                    android:layout_toLeftOf="@id/entitlement5AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/entitlement5AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearEntitlement5_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvEntitlement_5_Desc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_5_desc_1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_5_Desc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_5_desc_2"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <!--  Entitlement_5 Section End-->
+            <!--  Entitlement_6Section Start-->
+            <RelativeLayout
+                android:id="@+id/linearEntitlement6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgEntitlement6"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/entitlement_6"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgEntitlement6"
+                    android:layout_toLeftOf="@id/entitlement6AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/entitlement6AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearEntitlement6_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvEntitlement_6_Desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_6_desc"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <!--  Entitlement_6 Section End-->
+            <!--  Entitlement_7and8Section Start-->
+            <RelativeLayout
+                android:id="@+id/linearEntitlement7and8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgEntitlement7and8"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_7and8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/entitlement_7and8"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgEntitlement7and8"
+                    android:layout_toLeftOf="@id/entitlement7and8AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/entitlement7and8AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearEntitlement7and8_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvEntitlement_7and8_Desc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_7and8_desc_1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_7and8_Desc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_7and8_desc_2"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_7and8_Desc_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_7and8_desc_3"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_7and8_Desc_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_7and8_desc_4"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_7and8_Desc_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_7and8_desc_5"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <!--  Entitlement_9 Section End-->
+
+
+            <!--  Entitlement_9 Section Start-->
+            <RelativeLayout
+                android:id="@+id/linearEntitlement9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgEntitlement9"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/entitlement_9"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgEntitlement9"
+                    android:layout_toLeftOf="@id/entitlement9AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/entitlement9AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearEntitlement9_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvEntitlement_9_Desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_9_desc"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+            <!--  Entitlement_9 Section End-->
+            <!--  Entitlement10 Section Start-->
+            <RelativeLayout
+                android:id="@+id/linearEntitlement10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imgEntitlement10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_baseline24_hide_data"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/entitlement_10"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/imgEntitlement10"
+                    android:layout_toLeftOf="@id/entitlement10AudioButton"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/entitlement10AudioButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/speaker"
+                    android:backgroundTint="#000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearEntitlement10_Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvEntitlement_10_Desc_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_10_desc_1"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_10_Desc_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_10_desc_2"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_10_Desc_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_10_desc_3"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvEntitlement_10_Desc_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left|center"
+                    android:text="@string/entitlement_10_desc_4"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <!--
+                     <TextView
+                         android:id="@+id/tvEntitlement_10"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_marginLeft="@dimen/padding_5"
+                         android:layout_marginRight="@dimen/padding_5"
+                         android:gravity="left|center"
+                         android:text="@string/entitlement_10"
+                         android:textColor="#000"
+                         android:textSize="@dimen/text_font_size_18"
+                         android:textStyle="bold" />
+
+                     <TextView
+                         android:id="@+id/tvEntitlement_10_Desc_1"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_marginLeft="@dimen/padding_5"
+                         android:layout_marginRight="@dimen/padding_5"
+                         android:gravity="left|center"
+                         android:text="@string/entitlement_10_desc_1"
+                         android:textColor="#000"
+                         android:textSize="@dimen/text_font_size_18"
+                         android:textStyle="normal" />
+
+
+                     <TextView
+                         android:id="@+id/tvEntitlement_10_Desc_2"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_marginLeft="@dimen/padding_5"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginRight="@dimen/padding_5"
+                         android:gravity="left|center"
+                         android:text="@string/entitlement_10_desc_2"
+                         android:textColor="#000"
+                         android:textSize="@dimen/text_font_size_18"
+                         android:textStyle="normal" />
+
+                     <TextView
+                         android:id="@+id/tvEntitlement_10_Desc_3"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_marginLeft="@dimen/padding_5"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginRight="@dimen/padding_5"
+                         android:gravity="left|center"
+                         android:text="@string/entitlement_10_desc_3"
+                         android:textColor="#000"
+                         android:textSize="@dimen/text_font_size_18"
+                         android:textStyle="normal" />
+
+                     <TextView
+                         android:id="@+id/tvEntitlement_10_Desc_4"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_marginLeft="@dimen/padding_5"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginRight="@dimen/padding_5"
+                         android:gravity="left|center"
+                         android:text="@string/entitlement_10_desc_4"
+                         android:textColor="#000"
+                         android:textSize="@dimen/text_font_size_18"
+                         android:textStyle="normal" />-->
+            </LinearLayout>
+            <!--  Entitlement_10 Section End-->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/expendableshape"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/padding_5"
+                android:layout_marginRight="@dimen/padding_5"
+                android:background="@drawable/expendableshape"
+                android:drawableLeft="@mipmap/icon60_video_tutorial"
+                android:gravity="center|left"
+                android:text="@null"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/videoTutorialAudioButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@drawable/speaker"
+                android:backgroundTint="#000000"
+                android:paddingLeft="55dp"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_marginRight="@dimen/padding_5"
+            android:gravity="left|center"
+            android:textColor="#000"
+            android:textSize="@dimen/text_font_size_18"
+            android:textStyle="normal"
+            android:text="@string/video_content1"/>
+
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/card_main_home">
+
+            <TextView
+                android:id="@+id/tvContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:gravity="left|center"
+                android:textColor="#000"
+                android:textSize="@dimen/text_font_size_18"
+                android:textStyle="normal"
+                android:text="@string/in_english"/>
+
+            <WebView
+                android:id="@+id/webviewEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="23dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/card_main_home">
+
+        <TextView
+            android:id="@+id/tvContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:gravity="left|center"
+            android:textColor="#000"
+            android:textSize="@dimen/text_font_size_18"
+            android:textStyle="normal"
+            android:text="@string/in_hindi"/>
+
+        <WebView
+            android:id="@+id/webviewHindi"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="23dp"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/card_main_home">
+
+        <TextView
+            android:id="@+id/tvContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:gravity="left|center"
+            android:textColor="#000"
+            android:textSize="@dimen/text_font_size_18"
+            android:textStyle="normal"
+            android:text="In Telugu:"/>
+
+        <WebView
+            android:id="@+id/webviewTelugu"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="23dp"/>
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_marginRight="@dimen/padding_5"
+            android:gravity="left|center"
+            android:textColor="#000"
+            android:textSize="@dimen/text_font_size_18"
+            android:textStyle="normal"
+            android:text="@string/video_content2"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_marginRight="@dimen/padding_5"
+            android:gravity="left|center"
+            android:textColor="#000"
+            android:textSize="@dimen/text_font_size_18"
+            android:textStyle="normal"
+            android:text="@string/video_content2"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvContent6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_marginRight="@dimen/padding_5"
+            android:gravity="left|center"
+            android:textColor="#000"
+            android:textSize="@dimen/text_font_size_18"
+            android:textStyle="normal"
+            android:text="@string/video_content2"
+            />
+        <TextView
+            android:id="@+id/tvContent7"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_marginRight="@dimen/padding_5"
+            android:gravity="left|center"
+            android:textColor="#000"
+            android:textSize="@dimen/text_font_size_18"
+            android:textStyle="normal"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

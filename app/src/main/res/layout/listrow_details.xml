@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding_10"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/worktext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#000"
+        android:textSize="@dimen/text_font_size_16"></TextView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/padding_5"
+        android:background="#fff" />
+</LinearLayout>

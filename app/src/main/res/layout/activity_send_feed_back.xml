@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendFeedBackActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <!-- Asset Details Section-->
+            <LinearLayout
+                android:id="@+id/linearAssetDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/ratingBar"
+                android:background="#fff"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|left"
+                    android:background="@drawable/expendableshape"
+                    android:drawableLeft="@mipmap/ic_give_asset_feedback"
+                    android:gravity="center|left"
+                    android:text="@null"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/heading_font_size"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/infoTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@null"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_font_size_16"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:background="@color/lightYellow"
+                    android:orientation="horizontal"
+                    android:id="@+id/llAsset">
+
+                    <TextView
+                        android:id="@+id/assetTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="0.2"
+                        android:gravity="center|left"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_font_size_16"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="2dp"/>
+
+                    <nic.hp.ccmgnrega.views.spinner.SearchableSpinner
+                        android:id="@+id/spinnerAssets"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8"
+                        android:gravity="center|left"
+                        android:textColor="#000" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/viewAssetTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonshape"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:gravity="center"
+                    android:text="@null"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_font_size_16"
+                    android:textStyle="normal"
+                    android:layout_marginTop="2sp"/>
+                <TextView
+                    android:id="@+id/assetExistOrNotTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@null"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_font_size_16"
+                    android:textStyle="normal" />
+                <RadioGroup
+                    android:id="@+id/radioAsset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioAssetExist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@null" />
+
+                    <RadioButton
+                        android:id="@+id/radioAssetNotExist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@null" />
+
+                    <RadioButton
+                        android:id="@+id/radioAssetCantSay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@null" />
+                </RadioGroup>
+
+            </LinearLayout>
+            <!-- Asset Details Section-->
+            <!-- Feedback Section-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id = "@+id/linearFeedbackSection"
+                android:visibility="gone"
+                >
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="0.0"
+                    android:stepSize="1.0"
+                    android:visibility="gone" />
+                <LinearLayout
+                    android:id="@+id/assetlayoutRating1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/assetFeedBack1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:gravity="center|left"
+                        android:text="@null"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_font_size_16"
+                        android:textStyle="normal" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioAssetFeedBack1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioAssetFeedBack1Exist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null" />
+
+                        <RadioButton
+                            android:id="@+id/radioAssetFeedBack1NotExist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null" />
+
+                        <RadioButton
+                            android:id="@+id/radioAssetFeedBack1CantSay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/assetlayoutRating2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/assetFeedBack2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:gravity="center|left"
+                        android:text="@null"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_font_size_16"
+                        android:textStyle="normal" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioAssetFeedBack2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioAssetFeedBack2Exist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null" />
+
+                        <RadioButton
+                            android:id="@+id/radioAssetFeedBack2NotExist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null" />
+
+                        <RadioButton
+                            android:id="@+id/radioAssetFeedBack2CantSay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/assetlayoutRating3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/assetFeedBack3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:gravity="center|left"
+                        android:text="@null"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_font_size_16"
+                        android:textStyle="normal" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioAssetFeedBack3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioAssetFeedBack3Exist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null" />
+
+                        <RadioButton
+                            android:id="@+id/radioAssetFeedBack3NotExist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null" />
+
+                        <RadioButton
+                            android:id="@+id/radioAssetFeedBack3CantSay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/assetlayoutRating4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/assetFeedBack4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:gravity="center|left"
+                        android:text="@null"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_font_size_16"
+                        android:textStyle="normal" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioAssetFeedBack4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioAssetFeedBack4Exist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null" />
+
+                        <RadioButton
+                            android:id="@+id/radioAssetFeedBack4NotExist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null" />
+
+                        <RadioButton
+                            android:id="@+id/radioAssetFeedBack4CantSay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@null" />
+                    </RadioGroup>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/uploadImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_5"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:paddingLeft="@dimen/padding_5"
+                    android:paddingRight="@dimen/padding_5"
+                    android:visibility="gone" />
+                <android.widget.Button
+                    android:id="@+id/browseBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/buttonshape"
+                    android:drawableLeft="@android:drawable/ic_menu_camera"
+                    android:gravity="left|center"
+                    android:paddingLeft="@dimen/padding_5"
+                    android:paddingRight="@dimen/padding_5"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+                <RelativeLayout
+                    android:id ="@+id/rlPersonalInfoSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id = "@+id/etNameLayout"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:hint = "@string/your_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:id = "@+id/etName"
+                        android:inputType = "textPersonName"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_below="@+id/etNameLayout"
+                    android:id="@+id/etMobileLayout"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "8dp"
+                    android:hint = "@string/mobile_number"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:id = "@+id/etMobile"
+                        android:maxLength="10"
+                        android:inputType = "number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop = "8dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/etMobileLayout"
+                    android:weightSum="2"
+                    >
+                    <android.widget.Button
+                        android:id="@+id/btnGetOtp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/get_otp"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop = "6dp"
+                        android:background="@color/green_color"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id = "@+id/etOtpLayout"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:hint = "OTP"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width = "match_parent"
+                            android:layout_height = "match_parent"
+                            android:id = "@+id/etOtp"
+                            android:maxLength="6"
+                            android:inputType="numberPassword"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout></RelativeLayout>
+            </LinearLayout>
+            <!-- Feedback Section-->
+
+            <android.widget.Button
+                android:id="@+id/btnSendFeedBack"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/list_background_pressed"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:text="@string/submit"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
+

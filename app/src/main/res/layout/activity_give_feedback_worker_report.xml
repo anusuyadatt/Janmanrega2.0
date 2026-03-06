@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiveFeedbackWorkerReportActivity"
+    android:background="@color/lightYellow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:layout_centerInParent="true"
+       >
+        <android.widget.Button
+            android:layout_weight="1"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:id="@+id/btnFeedback"
+            android:text="@string/asset_feedback"
+            android:background="@drawable/expendableshape"
+            android:textColor="@color/white"
+           ></android.widget.Button>
+
+        <android.widget.Button
+            android:layout_weight="1"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:id="@+id/btnWorkerQuery"
+            android:text="@string/workers_query"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/expendableshape"
+            android:textColor="@color/white"
+           ></android.widget.Button>
+        <android.widget.Button
+            android:layout_weight="1"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:id="@+id/btnViewComplaintStatus"
+            android:text="@string/view_complaint_status"
+            android:background="@drawable/expendableshape"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"></android.widget.Button>
+
+        <android.widget.Button
+            android:layout_weight="1"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:id="@+id/btnViewUploadPhoto"
+            android:text="@string/ekyc_exemption"
+            android:background="@drawable/expendableshape"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"></android.widget.Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

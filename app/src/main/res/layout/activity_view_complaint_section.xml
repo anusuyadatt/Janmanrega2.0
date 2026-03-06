@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewComplaintSection">
+    <LinearLayout
+        android:id="@+id/llStateSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.75"
+            android:text="@string/state"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/llState"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/et_style"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Spinner
+                android:id="@+id/spinnerState"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:prompt="@string/state" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/app_background"
+        android:layout_below="@+id/llStateSection">
+        <TextView
+            android:id="@+id/loadingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:shadowColor="@color/app_background"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="4"
+            android:text="Searching..."
+            android:textColor="@color/all_text"
+            android:textSize="18dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/etComplaintId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <EditText
+            android:id="@+id/etComplaintId"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:cursorVisible="true"
+            android:ellipsize="none"
+            android:ems="10"
+            android:hint="@string/enter_mobile"
+            android:inputType="number"
+            android:textColor="@color/search_bar_text_color"
+            android:textColorHint="@color/search_bar_text_color"
+            android:textCursorDrawable="@null"
+            android:textIsSelectable="true"
+            android:textSize="18dp"
+            android:maxLength="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.326" />
+
+        <ImageView
+            android:id="@+id/searchButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/etComplaintId"
+            app:layout_constraintEnd_toEndOf="@+id/etComplaintId"
+            app:layout_constraintTop_toTopOf="@+id/etComplaintId"
+            android:src="@android:drawable/ic_menu_search"/>
+        <View
+            android:id="@+id/overlayView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:visibility="gone" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ExpandableListView
+        android:id="@+id/expendableList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/background_light"
+        android:dividerHeight="0.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_below="@+id/constraint"
+        android:visibility="gone"/>
+ <!--   <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center|left"
+                android:background="@drawable/expendableshape"
+                android:drawableLeft="@mipmap/ic_give_asset_feedback"
+                android:gravity="center|left"
+                android:text="@string/view_complaint_status"
+                android:textColor="#fff"
+                android:textSize="@dimen/heading_font_size"
+                android:textStyle="bold"
+                />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraint"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/app_background">
+                    <TextView
+                        android:id="@+id/loadingTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:shadowColor="@color/app_background"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="4"
+                        android:text="Searching..."
+                        android:textColor="@color/all_text"
+                        android:textSize="18dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toTopOf="@id/etComplaintId"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+
+                    <EditText
+                        android:id="@+id/etComplaintId"
+                        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/rounded_edittext_background"
+                        android:cursorVisible="true"
+                        android:ellipsize="none"
+                        android:ems="10"
+                        android:hint="@string/view_by_complaint_id"
+                        android:inputType="text"
+                        android:textColor="@color/search_bar_text_color"
+                        android:textColorHint="@color/search_bar_text_color"
+                        android:textCursorDrawable="@null"
+                        android:textIsSelectable="true"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.326" />
+
+                    <ImageView
+                        android:id="@+id/searchButton"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:outlineAmbientShadowColor="@color/white"
+                        android:outlineSpotShadowColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="@+id/etComplaintId"
+                        app:layout_constraintEnd_toEndOf="@+id/etComplaintId"
+                        app:layout_constraintTop_toTopOf="@+id/etComplaintId"
+                        android:src="@android:drawable/ic_menu_search"/>
+                    <View
+                        android:id="@+id/overlayView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#80000000"
+                        android:visibility="gone" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <ExpandableListView
+                    android:id="@+id/expendableList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@android:color/background_light"
+                    android:dividerHeight="0.5dp"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>-->
+</RelativeLayout>

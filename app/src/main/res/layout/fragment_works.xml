@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|left"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:layout_marginRight="@dimen/padding_5"
+        android:background="@drawable/expendableshape"
+        android:drawableLeft="@mipmap/icon_permissible_work_list"
+        android:gravity="center|left"
+        android:text="@null"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/workParaTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|left"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:layout_marginRight="@dimen/padding_5"
+        android:gravity="center|left"
+        android:text="@null"
+        android:textColor="#000"
+        android:textSize="@dimen/text_font_size_16"
+        android:textStyle="normal" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+       >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+      <!--  Category A Section-->
+        <LinearLayout
+            android:id="@+id/linearCatAHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:weightSum="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+            <TextView
+                android:id="@+id/tvCatAHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_category_a"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.9"
+                android:textSize="15sp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                ></TextView>
+
+            <ImageView
+                android:id="@+id/imgCatAHeader"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_baseline24_hide_data"
+                android:layout_weight="0.1"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearCatAContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:visibility="gone">
+
+            <RadioGroup
+                    android:id="@+id/rgCatAContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/rbNrCatAContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/radio_selector"
+                        android:elevation="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/nrm"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbNonNrCatAContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/radio_selector"
+                        android:elevation="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/non_nrm"
+                     ></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rbAllCatAContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/radio_selector"
+                        android:elevation="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/all"></RadioButton>
+                </RadioGroup>
+
+            <ListView
+                android:id="@+id/lvCatAResource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="3dp"
+                android:fadeScrollbars="false"
+                android:layout_marginBottom="5dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+        <!--  Category A Section-->
+
+        <!--  Category B Section-->
+        <LinearLayout
+            android:id="@+id/linearCatBHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:weightSum="1"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+            <TextView
+                android:id="@+id/tvCatBHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_category_b"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.9"
+                android:textSize="15sp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                ></TextView>
+
+            <ImageView
+                android:id="@+id/imgCatBHeader"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_baseline24_hide_data"
+                android:layout_weight="0.1"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearCatBContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/rgCatBContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/rbNrCatBContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/nrm"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbNonNrCatBContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/non_nrm"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbAllCatBContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/all"></RadioButton>
+            </RadioGroup>
+
+            <ListView
+                android:id="@+id/lvCatBResource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="3dp"
+                android:fadeScrollbars="false"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <!--  Category B Section-->
+
+        <!--  Category C Section-->
+        <LinearLayout
+            android:id="@+id/linearCatCHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:weightSum="1"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+            <TextView
+                android:id="@+id/tvCatCHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_category_c"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.9"
+                android:textSize="15sp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                ></TextView>
+
+            <ImageView
+                android:id="@+id/imgCatCHeader"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_baseline24_hide_data"
+                android:layout_weight="0.1"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearCatCContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/rgCatCContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/rbNrCatCContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/nrm"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbNonNrCatCContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/non_nrm"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbAllCatCContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/all"></RadioButton>
+            </RadioGroup>
+
+            <ListView
+                android:id="@+id/lvCatCResource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="3dp"
+                android:fadeScrollbars="false"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <!--  Category  C Section-->
+        <!--  Category D Section-->
+        <LinearLayout
+            android:id="@+id/linearCatDHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:weightSum="1"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+            <TextView
+                android:id="@+id/tvCatDHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_category_d"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.9"
+                android:textSize="15sp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                ></TextView>
+
+            <ImageView
+                android:id="@+id/imgCatDHeader"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_baseline24_hide_data"
+                android:layout_weight="0.1"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearCatDContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/rgCatDContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/rbNrCatDContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/nrm"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbNonNrCatDContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/non_nrm"
+                    ></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rbAllCatDContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/all"></RadioButton>
+            </RadioGroup>
+
+            <ListView
+                android:id="@+id/lvCatDResource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="3dp"
+                android:fadeScrollbars="false"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <!--  Category  D Section-->
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

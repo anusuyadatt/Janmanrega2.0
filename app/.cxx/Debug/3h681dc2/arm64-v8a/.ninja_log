@@ -1,0 +1,5 @@
+# ninja log v5
+9348	10796	7899887830437119	D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/JANMANREGA_V28.0_13012025/app/build/intermediates/cxx/Debug/3h681dc2/obj/arm64-v8a/libccmgnrega.so	27363de6877827e8
+0	9346	7899887816013672	CMakeFiles/ccmgnrega.dir/ccmgnrega.cpp.o	f2a78e499bdea3a7
+2	449	7899892508489098	CMakeFiles/ccmgnrega.dir/ccmgnrega.cpp.o	a96313097c9b9601
+450	690	7899892510795669	D:/NIC_PROJECTS/ANUSUYA_PROJECTS/MNREGA_PROJECTS/JANMANREGA_V28.0_13012025/app/build/intermediates/cxx/Debug/3h681dc2/obj/arm64-v8a/libccmgnrega.so	2da663ffc99507f6
